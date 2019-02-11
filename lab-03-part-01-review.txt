@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+cd ~
 
 
 ==========
@@ -23,16 +23,23 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
-
+ent-v314-014:~ student$ pwd
+/Users/student
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
-
+ent-v314-014:~ student$ ls
+AMALogger20190109.log	Library			Riba-MTEC1003
+AMALogger20190130.log	MPLABXProjects		Things
+Adlm			Movies			dog
+Adobe			Music			dog.jpg
+Applications		New Unity Project	ipe.properties
+Desktop			Pictures		isus
+Documents		Public			pymel.log
+Downloads		QLData			xgen
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
