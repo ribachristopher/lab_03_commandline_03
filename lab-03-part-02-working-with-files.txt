@@ -36,7 +36,9 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# touch foo.txt
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# ls
+foo.txt
 
 
 ==========
@@ -44,7 +46,7 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# touch bar.txt
 
 
 ==========
@@ -52,16 +54,22 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# ls -alt
+total 0
+drwxrwxrwx 1 root root 4096 Feb 17 23:37 .
+-rwxrwxrwx 1 root root    0 Feb 17 23:37 bar.txt
+-rwxrwxrwx 1 root root    0 Feb 17 23:35 foo.txt
+drwxrwxrwx 1 root root 4096 Feb 17 23:34 ..
 
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
 
-
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# cp bar.txt baz.txt
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# ls
+bar.txt  baz.txt  foo.txt
 
 
 ==========
@@ -69,13 +77,20 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# rm bar.txt
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# ls
+baz.txt  foo.txt
+
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# rm foo.txt
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/my_files# ls
+baz.txt
 
 
 ==========
@@ -90,7 +105,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03# rmdir my_files
+rmdir: failed to remove 'my_files': Directory not empty
 
 
 ==========
@@ -98,7 +114,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03# rm my_files
+rm: cannot remove 'my_files': Is a directory
 
 
 ==========
@@ -108,7 +125,9 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03# rm -rf my_files
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03# ls
+books  logs  web
 
 
 ==========
@@ -120,7 +139,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+opened text file very quickly. Screen scrolled down rapidly revealing text
 
 
 ==========
@@ -144,7 +163,9 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/books/other# head pg1232.txt
 
+Title: The Prince
 
 
 ==========
@@ -156,6 +177,10 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less pg1232.txt
+
+spacebar scrolls page down
+q quits
 
 
 
