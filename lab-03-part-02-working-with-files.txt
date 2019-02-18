@@ -151,7 +151,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/books/other# head pg1232.txt
 
+Title: The Prince
 
 
 ==========
@@ -163,9 +165,9 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/books/other# head pg1232.txt
+tail pg1232.txt
 
-Title: The Prince
+subscribe to our email newsletter to hear about new eBooks.
 
 
 ==========
@@ -189,15 +191,23 @@ q quits
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less/more shows pagination and makes it easier to scroll through pages with spacebar
+cat loads whole document at once
+tail is used to see end of text
+head is used to see beginning of text
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/books/other# wc pg1232.txt
+  5063  52639 305864 pg1232.txt
+  
+  52639 words
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+root@LAPTOP-IT39SQSI:/mnt/c/users/chris/mtec1002-lab-03/books/other# wc -l pg1232.txt
+5063 pg1232.txt
